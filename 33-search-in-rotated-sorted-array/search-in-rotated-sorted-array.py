@@ -14,6 +14,12 @@ class Solution(object):
 
             if arr[mid] == target:
                 return mid
+
+            if arr[low] == arr[mid] and arr[mid] == arr[high]:
+                low += 1
+                high -= 1
+                continue
+                
             if arr[low] <= arr[mid]:
                 if arr[low] <= target and target <= arr[mid]:
                     high = mid - 1
