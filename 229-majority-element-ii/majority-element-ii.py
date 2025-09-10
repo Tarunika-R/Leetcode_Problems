@@ -8,7 +8,9 @@ class Solution(object):
         result = []
         n = len(nums)
         for i in count:
-            if count[i]>n/3:
+            if count[i] > n/3:
                 result.append(i)
         return result
+        
+        
     
